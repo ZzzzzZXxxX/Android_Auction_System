@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.qzb.richeditor.RichEditor
+        android:id="@+id/editor"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_la"/>
+    <LinearLayout
+        android:id="@+id/bt_la"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/bt_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="添加图片"
+            android:onClick="Click"
+            android:layout_weight=".50"/>
+
+        <Button
+            android:id="@+id/bt_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:onClick="Click"
+            android:layout_weight=".50"/>
+    </LinearLayout>
+</RelativeLayout>

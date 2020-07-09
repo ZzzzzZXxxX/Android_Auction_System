@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.User.UserFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_Username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="xxxx"
+                android:textColor="@color/colorBlack"
+                android:textSize="40dp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/UserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/Username"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:id="@+id/IV_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                app:srcCompat="@drawable/ic_user_info" />
+
+            <TextView
+                android:id="@+id/TV_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/IV_1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="编辑个人资料" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/UserRecord"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/UserInfo"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:id="@+id/IV_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                app:srcCompat="@drawable/ic_order" />
+
+            <TextView
+                android:id="@+id/TV_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/IV_2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="参拍记录" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/UserOrder"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/UserRecord"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:id="@+id/IV_3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                app:srcCompat="@drawable/ic_order1" />
+
+            <TextView
+                android:id="@+id/TV_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/IV_3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的订单" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/commit_quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/UserOrder"
+            android:onClick="onClick"
+            android:text="退出"
+            tools:ignore="OnClick" />
+    </RelativeLayout>
+
+</FrameLayout>

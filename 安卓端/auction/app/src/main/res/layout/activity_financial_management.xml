@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color1">
+    <RelativeLayout
+        android:id="@+id/success"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:onClick="Click"
+        android:orientation="horizontal"
+        tools:ignore="OnClick">
+
+        <ImageView
+            android:id="@+id/IV_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/ic_success" />
+
+        <TextView
+            android:id="@+id/TV_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/IV_1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="成交记录" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/unsuccessful"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/success"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:onClick="Click"
+        android:orientation="horizontal"
+        tools:ignore="OnClick">
+
+        <ImageView
+            android:id="@+id/IV_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/ic_unsuccessful" />
+
+        <TextView
+            android:id="@+id/TV_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/IV_2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="流拍记录" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/statistics"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/unsuccessful"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:onClick="Click"
+        android:orientation="horizontal"
+        tools:ignore="OnClick">
+
+        <ImageView
+            android:id="@+id/IV_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/ic_statistics" />
+
+        <TextView
+            android:id="@+id/TV_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/IV_3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="统计" />
+    </RelativeLayout>
+</RelativeLayout>

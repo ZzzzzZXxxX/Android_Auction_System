@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itcast.auction">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".UserRecordActivity"></activity>
+        <activity android:name=".UserManagementActivity" />
+        <activity android:name=".StatisticsActivity" />
+        <activity android:name=".UnsuccessfulRecordActivityActivity" />
+        <activity android:name=".SuccessRecordActivity" />
+        <activity android:name=".FinancialManagementActivity" />
+        <activity android:name=".ContentActivity" />
+        <activity android:name=".UserOrderActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".AuctionRecordActivity" />
+        <activity android:name=".CommodityPayActivity" />
+        <activity android:name=".AuctionDetailsActivity" />
+        <activity android:name=".CommodityDescription" />
+        <activity android:name=".CreateAuctionActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".LaunchActivity"
+            android:theme="@style/LunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

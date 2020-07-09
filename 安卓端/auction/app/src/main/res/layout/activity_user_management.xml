@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/adm_et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:hint="请输入需要修改的用户名"
+        android:background="@color/colorWhite"
+        android:textColorHint="@android:color/darker_gray"></EditText>
+    <EditText
+        android:id="@+id/adm_et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:hint="输入需要修改的密码"
+        android:layout_below="@id/adm_et1"
+        android:background="@color/colorWhite"
+        android:textColorHint="@android:color/darker_gray"></EditText>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adm_et2"
+        android:text="修改信息，后点击修改按钮即可！！！"
+        android:layout_marginTop="5dp"></TextView>
+
+    <Button
+        android:id="@+id/adm_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改"
+        android:onClick="onClick"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/adm_commit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adm_commit"
+        android:text="停用用户"
+        android:onClick="onClick"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/adm_commit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adm_commit1"
+        android:text="恢复用户"
+        android:onClick="onClick"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
